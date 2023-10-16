@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* main -Prints a string of char
-* return: always 0
+* main - Prints a string of char
+* Return: Always 0
 */
 int main(void)
 {
