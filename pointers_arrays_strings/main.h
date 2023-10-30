@@ -1,3 +1,4 @@
+char *leet(char *);
 char *cap_string(char *);
 char *string_toupper(char *);
 void reset_to_98(int *n);
