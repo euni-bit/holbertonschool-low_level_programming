@@ -18,13 +18,17 @@ char *cap_string(char *s)
 			capitalize_next = 0;
 		}
 		else if (s[index] == ' ' || s[index] == '\t' ||
-		 s[index] == '\n' || s[index] == ',' ||
-		 s[index] == ';' || s[index] == '.' ||
-		 s[index] == '!' || s[index] == '?' ||
-		 s[index] == '"' || s[index] == '(' || s[index] == ')' ||
-		 s[index] == '{' || s[index] == '}')
+				s[index] == '\n' || s[index] == ',' ||
+				s[index] == ';' || s[index] == '.' ||
+				s[index] == '!' || s[index] == '?' ||
+				s[index] == '"' || s[index] == '(' || s[index] == ')' ||
+				s[index] == '{' || s[index] == '}')
 		{
 			capitalize_next = 1;
+		}
+		else
+		{
+			capitalize_next = 0;
 		}
 		index++;
 	}
