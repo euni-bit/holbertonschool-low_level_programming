@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * list_len - finds the number of elements in
@@ -14,7 +14,7 @@ size_t list_len(const list_t *h)
 	while (h)
 	{
 		elements++;
-		h = h->next++;
+		h = h->next;
 	}
 
 	return (elements);
